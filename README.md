@@ -2,18 +2,25 @@
 
 **Software Architect · Java & AI Engineering**
 
-I build software systems at the intersection of backend engineering, developer tooling, and applied AI — with an emphasis on clear architecture, reliable workflows, and verifiable results.
+I build backend systems and applied AI tools with a focus on clear architecture, reproducible workflows, and verifiable results.
 
-## Featured project
+## Featured AI projects
+
+### [TracePilot](https://github.com/codeyuri1/tracepilot)
+
+An incident investigation application with a Java 21 and Spring Boot backend and an interactive React interface. It produces structured analyses with a probable cause, supporting evidence, and recommendations for investigation, mitigation, and validation.
+
+The application verifies that cited excerpts appear in the incident material before completing an analysis. I integrated Ollama through an OpenAI-compatible API and validated the flow locally with `qwen2.5-coder:7b`. A deterministic mode supports reproducible demonstrations.
+
+The project also includes PostgreSQL/pgvector, controlled investigation tools, automated tests, CI, and observability with Prometheus and Grafana.
+
+**Technologies:** Java 21 · Spring Boot · Spring AI · React · TypeScript · Ollama · PostgreSQL/pgvector · Docker
 
 ### [Repo Agent Chat](https://github.com/codeyuri1/repo-analyzer)
 
-A local assistant for investigating real codebases with Retrieval-Augmented Generation (RAG), hybrid search, tools, and source-grounded answers.
+A local assistant for investigating codebases with Retrieval-Augmented Generation (RAG), hybrid search, repository-aware tools, and source-grounded answers.
 
-The project indexes repository content, retrieves relevant evidence, and coordinates an LLM with repository-aware tools. It supports local models through Ollama or OpenAI models, provides terminal and Gradio interfaces, and requires file-and-line citations before answering.
-
-
-Repository → Indexing → Hybrid Retrieval → Tools + LLM → Cited Answer
+It indexes repository content, retrieves relevant context, and coordinates an LLM with tools for code investigation. It supports local models through Ollama or OpenAI models, provides terminal and Gradio interfaces, and requires file-and-line citations in its answers.
 
 **Technologies:** Python · RAG · Vector Search · Ollama · OpenAI · Gradio · Docker
 
@@ -21,17 +28,12 @@ Repository → Indexing → Hybrid Retrieval → Tools + LLM → Cited Answer
 
 ### [DTO Facility API](https://github.com/codeyuri1/dto-facility-api)
 
-A Spring Boot web application that converts JSON input into Java DTOs or Java Records. It includes a Thymeleaf interface, nested-object support, validation and exception handling, tests, and Docker support.
+A Spring Boot application that converts JSON input into Java DTOs or Java Records. It includes a Thymeleaf interface, nested-object support, validation, tests, and Docker support.
 
 **Technologies:** Java · Spring Boot · Gradle · Thymeleaf · Docker
 
 ## Technical focus
 
-- **Backend & architecture:** Java, Spring Boot, REST APIs, modular design
-- **AI engineering:** Python, RAG, embeddings, hybrid retrieval, LLM tools, grounded generation
-- **Delivery:** Docker, automated tests, code quality, reproducible local environments
-
-## Selected work
-
-- [repo-analyzer](https://github.com/codeyuri1/repo-analyzer) — repository analysis with RAG, tools, local/cloud LLM providers, and verifiable citations
-- [dto-facility-api](https://github.com/codeyuri1/dto-facility-api) — JSON-to-Java DTO/Record generation with Spring Boot
+- **Backend and architecture:** Java, Spring Boot, REST APIs, modular design
+- **Applied AI:** RAG, hybrid retrieval, LLM integration, controlled tools, verifiable evidence
+- **Delivery and operations:** Docker, automated tests, CI, observability, reproducible local environments
